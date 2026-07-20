@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Swagger UI with Download Button</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/swagger-ui/4.1.6/swagger-ui.min.css">
+</head>
+<body>
+    <div id="swagger-ui"></div>
+
+    <button onclick="downloadSwaggerPdf()">Download PDF</button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/swagger-ui/5.17.2/swagger-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/swagger-ui/5.17.2/swagger-ui-standalone-preset.min.js" ></script>
+    <script>
+        window.onload = function() {
+            // Initialize Swagger UI
+            const ui = SwaggerUIBundle({
+                url: "/swagger.json",
+                dom_id: '#swagger-ui',
+                presets: [
+                    SwaggerUIBundle.presets.apis,
+                    SwaggerUIStandalonePreset
+                ],
+                layout: "BaseLayout"
+            });
+
+            // Function to download Swagger PDF
+            function downloadSwaggerPdf() {
+                window.location.href = "/download-pdf";
+            }
+        };
+    </script>
+</body>
+</html>

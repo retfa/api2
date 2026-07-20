@@ -1,0 +1,1 @@
+pyinstaller app_F.spec

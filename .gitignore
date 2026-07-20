@@ -1,0 +1,8 @@
+/dist/
+/build/
+/.p3.9.5/
+/.p3.12.4/
+/.venv/
+app_D.spec
+app_F.spec
+connections.json

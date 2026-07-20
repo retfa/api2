@@ -1,0 +1,17 @@
+{
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.autopep8",
+        "editor.formatOnSave": false
+    },
+    "flake8.args": ["--max-line-length=120"],
+    "flake8.ignore": ["E123", "E133", "E226"],
+    "terminal.integrated.env.windows": {
+        "PYTHONPATH": "C:/Project/@Web/api2"
+    },
+    "terminal.integrated.env.linux": {
+        "PYTHONPATH": "C:/Project/@Web/api2"
+    },
+    "terminal.integrated.env.osx": {
+        "PYTHONPATH": "C:/Project/@Web/api2"
+    }
+}
